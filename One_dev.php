@@ -161,7 +161,7 @@
             </div>
         </div>
     </div>
-    <a href="home.php" class="h">Back To Home</a>
+    <a href="index.php" class="h">Back To Home</a>
 </div>
 <?php
     // Include the footer file

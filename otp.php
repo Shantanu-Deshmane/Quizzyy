@@ -19,7 +19,7 @@ if (isset($_POST['verify'])) {
     if ($enteredOTP == $storedOTP) {
        
         $_SESSION['id'] = $userId; 
-        header("location:home.php");
+        header("location:index.php");
         exit();
     } else {
         $error = "Incorrect OTP";

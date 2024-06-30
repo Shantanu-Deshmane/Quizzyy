@@ -219,7 +219,7 @@ require("connection.php");
 </head>
 
 <body>
-<a href="home.php" class="h">X</a>
+<a href="index.php" class="h">X</a>
 
     <div class="container">
         <div class="item">
@@ -280,7 +280,7 @@ require("connection.php");
 
         if (mysqli_query($conn, $sql)) {
             // Redirect to a success page or display a success message
-            header("Location: home.php");
+            header("Location: index.php");
             exit(); // Stop further execution
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);

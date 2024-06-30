@@ -29,7 +29,7 @@
 </style>
 <body>
     <div>
-<a href="home.php" class="h">X</a>
+<a href="index.php" class="h">X</a>
     </div>
    <div class="section">
         <div class="about-container">
