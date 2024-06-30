@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quizzyy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            padding: 0 8%;
+            display: none;
+        }
+
+        .container h1 {
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 60px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .container h1::after {
+            content: '';
+            background: #303ef7;
+            width: 200px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #pro {
+            height: 40px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background: transparent;
+            transition: transform 0.5s, background 0.5s;
+            width: 100%;
+            height: 100%;
+            padding: 2em 1.5em;
+            background: linear-gradient(#ffffff 50%, #303ef7 50%);
+            background-size: 100% 200%;
+            background-position: 0 2.5%;
+            border-radius: 5px;
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+            text-decoration: none;
+        }
+
+
+
+        .service img {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #303ef7;
+        }
+
+        .service h2 {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .service h3 {
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        .service a {
+            color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+        .service:hover {
+            background-position: 0 100%;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .h {
+            float: right;
+            padding: 20px;
+            background: #303ef7;
+            margin-top: 10px;
+            color: #fff;
+            margin-right: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: medium;
+        }
+
+        .h:hover {
+            opacity: .7;
+        }
+
+        .pp {
+            background: #303ef7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-left: 50px;
+            margin-right: 45px;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .pp:hover {
+            background: #fff;
+        }
+
+        .container1 {
+            display: block;
+            width: 500px;
+            height: 550px;
+            background: #ffffff;
+            box-shadow: 2px 2px 8px 2px #e0e0e0, -2px -2px 8px 2px #e0e0e0;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 64px 50px;
+        }
+
+        .container1 h1 {
+            color: #303ef7;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container1 ol li {
+            margin-bottom: 20px;
+        }
+
+        .container1 button {
+            background-color: #303ef7;
+            color: white;
+            padding: 0.9rem 2.5rem;
+            align-content: center;
+            display: block;
+            margin: auto;
+            margin-top: 2.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+        ::-webkit-scrollbar {
+    width: 16px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-image: linear-gradient(#000c8a,#1224e9,#3545f5, #6a77ff);
+  }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="home.php" class="h">Back To Home</a>
+    </div>
+    <div class="container">
+        <h1>Let's Quizzzz</h1>
+        <div class="row">
+            <div class="service">
+                <!-- <img src="/project/Images/web.png.png" alt="" id="pro"> -->
+                <h2>Web Development</h2>
+    This is a basic quiz of SQL. Let's go!</p>
+                <h3 class="pp"><a href="prac/web_p.html">Practice set</a></h3>
+
+            </div>
+            <div class="service">
+                <!-- <img src="/project/Images/Data.png.png" alt="" id="pro"> -->
+                <h2>Data Structure</h2>
+                <p>This is a basic quiz of Data Structures. Let's go!</p>
+                <h3 class="pp"><a href="prac/ds.html">Practice set</a></h3>
+            </div>
+            <div class="service">
+                <!-- <img src="/project//Images/my.png.png" alt="" id="pro"> -->
+                <h2>Mysql(Database)</h2>
+                <p>This is a basic quiz of SQL. Let's go!</p>
+                <h3 class="pp"><a href="prac/sql.html">Practice set</a></h3>
+            </div>
+            <div class="service">
+                <!-- <img src="/project//Images/c.png.png" alt="" id="pro"> -->
+                <h2>C</h2>
+                <p>This is a basic quiz of C Language. Let's go!</p>
+                <h3 class="pp"><a href="prac/c.html">Practice set</a></h3>
+            </div>
+            <div class="service">
+                <!-- <img src="/project/Images/c++.png.png" alt="" id="pro"> -->
+                <h2>C++</h2>
+                <p>This is a basic quiz of C++ Language. Let's go!</p>
+                <h3 class="pp"><a href="prac/c++.html">Practice set</a></h3>
+            </div>
+            <div class="service">
+                <!-- <img src="/project/Images/java.png.png" alt="" id="pro"> -->
+                <h2>java</h2>
+                <p>This is a basic quiz of Java. Let's go!</p>
+                <h3 class="pp"><a href="prac/java.html">Practice set</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***********************************INSTRUCTIONS******************************************************** -->
+
+    <div class='container1'>
+        <h1 class='title'>Quiz Instructions</h1>
+
+        <ol>
+            <li>You will be asked 20 questions one after another.</li>
+            <li>Each question carries 2 marks</li>
+            <li>Time for 20 question is 5 minutes</li>
+            <li>Each question has four options. You can choose only one options.</li>
+            <li>You can review and change answers before submit.</li>
+            <li>Once you submitted the question you are not able to make changes in it. </li>
+            <li>The result will be declared at the end of the quiz.</li>
+        </ol>
+        <button class='info-button'>Start Quiz</button>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const instructionContainer = document.querySelector(".container1");
+            const quizContainer = document.querySelector(".container");
+            const button = document.querySelector(".info-button");
+
+            button.addEventListener('click', () => {
+                console.log("clicked");
+                if (quizContainer) {
+                    quizContainer.style.display = "block";
+                    instructionContainer.style.display = "none";
+                } else {
+                    console.error("Quiz container not found!");
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
