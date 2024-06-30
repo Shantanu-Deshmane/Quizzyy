@@ -1,1 +1,0 @@
-Quizzyy.github.io
